@@ -1,0 +1,491 @@
+root {
+	/*configuraion principal de los estilos de nuestra pagina web:*/
+
+	/*paleta de colores:*/
+	primaario: white; /*para colores de cuerpo, como los fondos */
+	secundario: #2582BB; /*para los menus o los cuadros de primociones*/
+	tercero: #8999A3; /*para los botones de login o enlaces*/
+	cuarto: #EA1616; /*	para los promos o revelacias en titulos*/
+	quinto:#EDE60E; /*para combinar con segunto cuarto o primero*/
+	sexto: black;  /*para contrstar con el primero*/
+}
+.cabecera{
+/* 
+display: importante para conrolar estrucuras;
+background-color: Establece el color de fondo de un elemento
+position: Posiciona los elementos de forma normal, relativa, absoluta o fija
+top: Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor
+left: Establece la anchura de la zona de relleno izquierdo de los elementos
+width: Establece la anchura de los elementos de bloque
+transition: se usa para definir los nombres de las propiedades
+*/
+background-color: #2582BB; /* color para el fondo del menu */
+position: fixed; /* Nos aseguramos que la posicion siempre arriba */
+top: 0; /* le ponemos un margen arriba de valor 0 para que se ubique en la parte superior */
+left: 0;
+width: 100%; /* le agregamos uun ancho completo, */
+transition: top 0.3s; /* efecto de transicion de arriba a abajo cuando tengamos scroll.*/
+} 
+.logo{
+position: fixed;
+align-self: flex-start;
+}
+.img{
+z-index: 900;
+margin-top: 8px;
+margin-left: 20px;
+box-shadow: inset;
+}
+.menu{
+display: inline-flex;/*los atributos de display nos ayudan a ubicar los elementos en la pagina*/
+text-align:center;
+float: right;
+}
+.menu > ul {
+float: right;
+display: inline-flex;
+text-decoration: none;
+right: 2;
+}
+.menu > ul >li{
+padding: 10px;
+text-decoration: none;
+list-style: none;
+}
+.menu > ul > li > a{
+text-decoration: none;
+color: white;
+padding: 10px;
+}
+.menu > ul > li > a:hover{
+	color: #EDE60E; /*tomamos el quinto color de nuestra paleta;*/
+	padding: 5px;
+	background-color: #EA1616;
+	border-radius: 5px
+}
+.inicio{
+	display: block;
+	position: inherit;
+	width: 100%;
+	height: 450px;
+	background-color: black;
+	background: url("../media/img/carretera.jpg"); /* descargar esta imagen desde internet*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.banner{ 
+	width: 20%;
+	padding: 25px;
+	margin-left: 5%;
+	background-color: rgba(220,75,105,0.7);
+}
+.tbanner{
+	font-size: 32px;
+	font-family: cursive;
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px #2582BB;
+}
+.pbanner{
+	font-weight: bolder;
+	font-style: italic;
+	font-family: cursive;
+	font-size: 20px;
+	color: #EDE60E;
+	text-shadow: 2px 2px red;
+}
+.elcregistro{
+	color: white;
+	text-decoration: none;
+	padding: 5px !important;
+	border-radius: 8px !important;
+	float: right;
+	font-size: 18px;
+}
+.empresa{
+	width:  100%;
+	height: 300px
+	background-color:white;
+}
+.promo{
+	display: inline-flex;
+	width: 80%;
+	margin-left: 10%;
+}
+.promo h4{
+	text-align: center;
+	font-family: italic, cursive;
+	font-size: 22px;
+}
+.conocenos{
+	width: 21%;
+	margin: 0, 4px;
+	padding-left: 2%;
+}
+.buses{
+	width: 21%;
+	margin: 0,4px;
+	padding-left: 2%;
+}
+.rutas{
+	width: 21%;
+	margin:0, 4px;
+	padding-left: 2%;
+}
+.reserva{
+	width: 21%;
+	margin: 0, 4px;
+	padding-left: 2%;
+	text-align: center;
+	text-decoration: none;
+	font-family: Roboto, cursive;
+	background-image: url("../media/img/invitacion.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.reserva:hover{
+	transform: rotate(350deg);
+	transform-origin: right bottom 2;
+	font-size: 30px;
+	text-shadow: 2px 2px #EDE60E;
+	text-decoration: none;
+}
+.reserva a{
+	text-decoration:  none;
+	color: #EA1616;
+}
+.alianza{
+	background-image: url("../media/img/turismo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+}
+.alianza h2{
+	color: #EA1616;
+	text-shadow: 2px 3px #EDE60E;
+	font-family: Roboto, cursive;
+}
+.falianza{
+	width: 28%;
+	float: right;
+	background-color: rgba(73,155,234,0.7);
+	padding: 25px;
+	box-shadow: #EDE60E 5px 5px 5px 5px;
+	font-family:  tahoma,cursive;
+	color: #EDE60E;
+	text-shadow: 2px 3px #EA1616;
+}
+.coda{
+	display: inline-flex;
+	width: 100%;
+}
+.preguntas{
+	width: 50%;
+}
+.contacto{
+	flex: left;
+}
+.coda{
+	display: inline-flex;
+	width: 100%;
+}
+.preguntas{
+	font-family: Roboto, cursive;
+	width: 50%;
+	height: 400px;
+	color: #EA1616;
+	padding-left: 30px;
+	padding-top: 20px;
+	margin-left: 10%;
+}
+.preguntas span{
+	font-size: 24px;
+	font-weight: bold;
+}
+.preguntas li > a{
+	text-decoration-line: none;
+	color: red;
+}
+.contacto{
+	flex: left;
+	margin-right: 5%;
+}
+a{
+	text-decoration: none;
+}
+.pie{
+	text-align: center;
+	color: #EA1616;
+}
+.section{
+display: block;
+position: inherit;
+width: 100%;
+height: 450px;
+background-color: black;
+background-image: url("../media/img/1bus.jpg"); /* descargar esta imagen desde internet*/
+background-size: cover;
+background-repeat: no-repeat;
+}
+.alianza2{
+background-image: url("../media/img/turismo2.png");
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 500px;
+}
+.formulario{
+	width: 30%;
+	margin: auto;
+	margin-top: 10%;
+	text-align: center;
+	box-shadow: 0px 1px 19px 8px rgba(0,0,0,0.75);
+}
+.ilogo{
+	padding-top: 20px;
+}
+.imglogo{
+	background-color: rgba(73,155,234,0.7);
+}
+.tlogin{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: Roboto, cursive;
+	color: #2582BB;
+}
+.entrada{
+	font-size: 18px;
+	width: 100%;
+	font-family: Roboto, cursive;
+	text-align: left;
+}
+.entrada > label{
+	width: 100%;
+	display: inline;
+	margin-left: 10px;
+	padding: 15px;
+	font-weight: bold;
+	color: #EA1616;
+}
+.entrada > input{
+	width: 90%;
+	display: block;
+	font-size: 21px;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 8px;
+	color: #2582BB;
+}
+.botones{
+	display: block;
+	font-family: tahoma, cursive;
+}
+.btnlogin{
+	/*width: 90%;
+	margin: 20px 20px 20px;
+	font-size: 24px;
+	background-color: #2582BB;
+	color: white;
+	border-style: none;
+	padding: 3px;*/
+	border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.botones >a{
+	background-color: #EDE60E;
+	padding: 3px;
+	font-weight: bolder;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    transition: all 0.5s;
+}
+.avatar:hover {
+	transform: scale(1.2);
+}
+.avatarR{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: calc(50% - 50px);
+    transition: all 0.5s;
+}
+.avatarR:hover {
+	transform: scale(1.2);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+.logoL{
+	width: 25%;
+	height: 25%;
+	padding-left: 35%;
+}
+.contenedor{
+	width: 1290px;
+	height: 300px;
+	max-width: 1500px;
+	margin: auto;
+	background:rgba(24,8,33,.9);
+	padding:20px;
+	margin: 20 px auto;
+	color:#fff;
+	box-shadow: rgba(0, 0, 0, 0.25);
+	text-align: center;
+	display: inline-flex;
+	/*
+	outline: hidden;*/
+	
+		
+}
+.contenedor div{
+	/*position: absolute;
+	display: inline-flex;*/
+	text-align: center;
+	/*rgin: 15px;*/	
+	outline: hidden;
+	
+}
+.contenedor div img{
+	display: inline-block;
+	transition: all 0.5s;
+
+
+}
+.contenedor div img:hover {
+	transform: scale(1.2);
+}
+.contenedor div div {
+	transform: translateY(-1000px);
+}
+.contenedor div img:hover .cotenedor div div{
+	transform: translateY(1000px);
+}
+/*
+.contenedor p{
+	background: rgba(7, 138, 138, 0.3);
+} */
+.abajo{
+	padding-top: 10%;
+}
+#respuesta {
+	color: blue;
+	font-size: 17px;
+	text-align: center;
+	border-radius: 5px;
+	background: #1c8adb;
+}
+#respuesta:hover {
+	color: #39dc79;
+}
+.tregistro {
+	width: 700px;
+ 	text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 130px auto;
+    padding: 10px 20px 50px 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 0px #D1D1D1;
+    display: inline-flex;/*
+	margin-top: 100px;
+	background: rgba(0, 0, 0, 0.5);
+	width: 945px;
+	height: 400px;
+	display: inline-flex;
+	text-align: center;
+	padding-left: 30%;
+}*/}
+.tregistro input{
+	margin-right: 30px;
+
+}
+ .letra{
+ 	color: black;
+ 	text-align: center;
+ 	color: #fff;
+ }
+
+.barras{
+    font-size: 13pt;
+    border: none;
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.boton{
+    background:  #1c8adb;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    color: #eee;
+    font-size: 15pt;
+    border-bottom:4px solid  #1c8adb;
+  }
+
+    /* FORMULARIO_ TAREA .-. */
+ .apartado1{
+ 	margin-top: 150px;
+ }
